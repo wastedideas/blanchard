@@ -1,0 +1,25 @@
+/* Plugins */
+@import 'swiper-bundle.min.css';
+@import 'choices.min.css';
+@import 'bootstrap.css';
+@import 'focus-visible.css';
+@import 'magnific-popup.css';
+@import 'https://unpkg.com/simplebar@latest/dist/simplebar.css';
+
+
+/* Global */
+@import 'normalize.css';
+@import 'fonts.css';
+@import 'style.css';
+
+/* Blocks */
+@import 'header.css';
+@import 'hero.css';
+@import 'about-us.css';
+@import 'gallery.css';
+@import 'catalog.css';
+@import 'events.css';
+@import 'editions.css';
+@import 'projects.css';
+@import 'contacts.css';
+@import 'footer.css';

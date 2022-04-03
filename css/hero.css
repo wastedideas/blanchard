@@ -1,0 +1,119 @@
+/* Hero */
+
+.hero {
+  color: #FFFFFF;
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.container_hero {
+  padding-top: 240px;
+  padding-bottom: 144px;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 83px;
+  max-width: 597px;
+  margin: 0 0 21px 0;
+}
+
+.hero__description {
+  line-height: 30px;
+  max-width: 600px;
+  margin: 0 0 113px 0;
+}
+
+.hero__link-subscription {
+  line-height: 25px;
+  padding: 20.5px 33px 20.5px 33px;
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
+  background-color: #9D5CD0;
+  -webkit-transition-property: border;
+  -o-transition-property: border;
+  transition-property: border;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.hero__link-subscription:hover,
+.hero__link-subscription:focus {
+  border-color: #D1A9F0;
+  outline: none;
+}
+
+.hero__link-subscription:active {
+  outline: none;
+  background-color: #7943A4;
+}
+
+/* Hero swiper */
+
+.hero__swiper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero-img-1,
+.hero-img-2,
+.hero-img-3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: scale_bg infinite alternate;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.hero-img-1 {
+  background-image: url('../img/hero-background-1.jpg');
+}
+
+.hero-img-2 {
+  background-image: url('../img/hero-background-2.jpg');
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.hero-img-3 {
+  background-image: url('../img/hero-background-3.jpg');
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+@-webkit-keyframes scale_bg {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes scale_bg {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
